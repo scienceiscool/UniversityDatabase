@@ -24,7 +24,7 @@ Course Number: <input type="text" name="COURSENUMBER">
 </html>
 
 <?php
-     $link = mysql_connect('ecsmysql', 'cs332g24', 'eedapoog');
+     $link = mysql_connect('ecsmysql', 'username', 'password');
 
      if(!$link){
        die('Could not connect: ' . mysql_error());
@@ -32,7 +32,7 @@ Course Number: <input type="text" name="COURSENUMBER">
 
      echo 'Connected successfully!<p>';
 
-     mysql_select_db("cs332g24",$link);
+     mysql_select_db("username",$link);
      
      $prof_ssn = $_POST["PROFSSN"];
      $course_num = $_POST["COURSENUMBER"];
